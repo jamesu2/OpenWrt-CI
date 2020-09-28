@@ -73,6 +73,10 @@ jobs:
           # 例如:
 
           cat >> .config <<EOF
+          CONFIG_TARGET_MediaTk Ralink Mips=y
+          CONFIG_TARGET_MT762X_DEVICE_phicomm-k2=y
+          CONFIG_TARGET_BOARD="MT7620"
+          
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
